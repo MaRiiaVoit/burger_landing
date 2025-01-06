@@ -36,7 +36,8 @@ h6 {
 }
 
 .container {
-  max-width: 1140px;
+  box-sizing: border-box;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -165,4 +166,52 @@ h6 {
 .food-list__desc {
   font-size: 16px;
   opacity: 0.7;
+}
+
+.order {
+  background: #312f30;
+  padding: 60px 0;
+}
+
+.order .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 90px;
+}
+
+.order__img {
+  max-width: 470px;
+}
+
+.order__text {
+  max-width: 360px;
+}
+
+.order__title {
+  margin-bottom: 25px;
+  font-size: 44px;
+}
+.order__desc {
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+.order__price {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+  font-size: 20px;
+}
+.order__price--old {
+  font-size: 16px;
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.order__price + .order__price {
+  margin-left: 3px;
+}
+
+.order .btn {
+  margin-top: 10px;
 }
